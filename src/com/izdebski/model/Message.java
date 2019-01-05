@@ -1,8 +1,12 @@
 package com.izdebski.model;
 
-import javax.annotation.PreDestroy;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
 
-public class Message  {
+import javax.annotation.PreDestroy;
+import javax.xml.ws.Dispatch;
+
+public class Message {
 
     private int messageId;
     private String message;
